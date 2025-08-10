@@ -23,7 +23,7 @@ pub(crate) mod tcp;
 /// Maximum request/response PDU size.
 ///
 /// As defined by the spec for both RTU and TCP.
-const MAX_PDU_SIZE: usize = 253;
+const MAX_PDU_SIZE: usize = 512;
 
 #[cfg(any(test, feature = "rtu", feature = "tcp"))]
 #[allow(clippy::cast_possible_truncation)]
